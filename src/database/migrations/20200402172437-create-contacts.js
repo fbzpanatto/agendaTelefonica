@@ -6,7 +6,7 @@ module.exports = {
       id: {
         allowNull: false,
         primaryKey: true,
-        type: DataTypes.UUID,
+        type: DataTypes.UUID, //TODO REVIEW
         defaultValue: DataTypes.UUIDV4 // Or Sequelize.UUIDV1
       },
       name: {

@@ -1,17 +1,13 @@
 const Controller = require('../util/genericController')
 
-class ContactController extends Controller{
+class LogController extends Controller{
   constructor(model) {
     super(model)
   }
 
-  testando(){
-    console.log('teste')
+  test() {
+    console.log('test')
   }
 }
 
-const contactController = new ContactController('Contacts')
-
-module.exports = {
-  contactController
-}
+module.exports = new LogController('Contacts')
